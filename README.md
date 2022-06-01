@@ -35,7 +35,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Link to Webapp: https://github.com/LimLiangHong/MAMBA
+Link to Webapp: https://limlianghong.github.io/MAMBA/
 
 Interactive Design - Assignment 1 Portfolio Website by Lim Liang Hong
 
