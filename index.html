@@ -1,5 +1,246 @@
-<html>
-    <body>
-        lmao
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body onload="hideAll()">
+    <nav class="navbar">
+        <div class="container-options">
+           <a href="#intro" class="button"> Home </a>
+           <a href="#start" class="button"> Works </a>
+           <a href="#form" class="button"> Contact </a>
+        </div>
+
+    </nav>
+    <a href="#intro" class="toTop"></a>
+    <div id="intro" class="intro">
+        <div class="bg">
+            <div class="container">
+                <div class="introtext">Hi, I am</div>
+                <div class="name">LiangHong</div>
+                <div class="subtitle">Immersive Media Student | Aspiring 3D Artist | Badminton Enthusiast</div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="scroll">
+        <div class="text">Check Me Out!</div>
+        <a href="#start">
+            <div class="image"></div>
+        </a>
+    </div>
+    
+    <div class="experiences">
+        <div id="start" class="header">my Works</div>
+        <div class="container">
+            <a id="one" href="#artwork" onclick="select(1)">
+                <div class="section art2D">
+                    <div class="text">2D Artwork</div>
+                </div>
+            </a>
+            <a id="two" href="#projects" onclick="select(2)">
+                <div class="section art3D">
+                    <div class="text">3D Projects</div>
+                </div>
+            </a>
+            <a id="three" href="#others" onclick="select(3)">
+                <div class="section misc">
+                    <div class="text">Others</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    
+    <div id="work2D" class="workspace work2D">
+
+        <div id="artwork" class="text">2D Artworks</div>
+        <div class="section">
+            <div class="image kueh"></div>
+            <div class="text-container">
+                <div class="title">Right Artwork</div>
+                <div class="description right">
+                    <div class="creationDate">Completed On:</div>
+                    <div class="desc">This artwork is about my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-container">
+                <div class="title">Left Artwork</div>
+                <div class="description left">
+                    <div class="creationDate">Completed On:</div>
+                    <div class="desc">This artwork is about my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+            <div class="image nezha"></div>
+        </div>
+    </div>
+
+    <div id="work3D" class="workspace work3D">
+
+        <div id="projects" class="text">3D Models</div>
+        <div class="section">
+            <div class="image bike"></div>
+            <div class="text-container">
+                <div class="title">Right Artwork</div>
+                <div class="description right">
+                    <div class="creationDate">Created On:</div>
+                    <div class="desc">This model is of my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-container">
+                <div class="title">Left Artwork</div>
+                <div class="description left">
+                    <div class="creationDate">Created On:</div>
+                    <div class="desc">This model is about my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+            <div class="image girl"></div>
+        </div>
+    </div>
+
+    <div id="workMisc" class="workspace workMisc">
+
+        <div id="others" class="text">Miscellaneous Projects</div>
+        <div class="section">
+            <div class="image touhou"></div>
+            <div class="text-container">
+                <div class="title">Right Project</div>
+                <div class="description right">
+                    <div class="creationDate">Executed On:</div>
+                    <div class="desc">This project is about my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-container">
+                <div class="title">Left Project</div>
+                <div class="description left">
+                    <div class="creationDate">Executed On:</div>
+                    <div class="desc">This artwork is about my favourite character, potato. This is my artistic attempt to recreate this beautiful character</div>
+                    <a href="#">
+                        <div class="link">Find Out More</div>
+                    </a>
+                </div>
+            </div>
+            <div class="image boardgame"></div>
+        </div>
+    </div>
+    
+    <form id="form" action="/action_page.php" method="get" id="nameform" class="forms">
+        <div class="image"></div>
+        <div class="form-section">
+            <div class="left-section">
+                <label for="name">Your Name</label>
+                <input id="name" type="text" class="input name" placeholder="your name">
+                <label for="name">Your Course</label>
+                <input id="name" type="text" class="input course" placeholder="your course">
+                <label for="name">Your Email</label>
+                <input id="name" type="email" class="input email" placeholder="your email">
+            </div>
+            <div class="right-section"></div>
+                <label for="commentbox"></label>
+                <input id="commentbox" type="textarea" placeholder="Any Comments for me">
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <a href="http://www.gmail.com" target="_blank" class="email">limlianghong1@gmail.com</a>
+        <div class="icon-container">
+            <a href="https://www.instagram.com" target="_blank" class="instagram"></a>
+            <a href="https://sketchfab.com" target="_blank" class="sketchfab"></a>
+            <a href="https://facebook.com" target="_blank" class="linkedin"></a>
+        </div>
+    </footer>
+
+</body>
+<script type="application/javascript">
+    let firstRan = false;
+    const twoDimArt = document.getElementById("work2D");
+    const threeDimArt = document.getElementById("work3D");
+    const otherArt = document.getElementById("workMisc");
+
+    let allObjects= [twoDimArt, threeDimArt, otherArt];
+    let buttonObject = ["none", "one", "two", "three"];
+    let selectedObjects = [];
+
+    function hideAll()
+    {
+        if (firstRan)
+        {
+            return
+        }
+        for (let i=0; i<allObjects.length; i++)
+        {
+            allObjects[i].style.display = "none";
+        }
+        firstRan = true;
+    }
+
+    function select(code)
+    {
+        console.log(code);
+        console.log(selectedObjects);
+
+        if (selectedObjects.length > 2)
+        {
+            selectedObjects = [];
+        }
+
+        if (selectedObjects[0] != allObjects[code] && selectedObjects.length == 2)
+        {
+            selectedObjects[0].style.display = "none";
+            selectedObjects = [];
+        }
+        
+        if (code == 1)
+        {
+            selectedObjects.push(twoDimArt);
+            selectedObjects.push(code);
+        } else if (code ==2)
+        {
+            selectedObjects.push(threeDimArt);
+            selectedObjects.push(code);
+        } else if (code == 3)
+        {
+            selectedObjects.push(otherArt);
+            selectedObjects.push(code);
+        } else
+        {
+            console.log(code + " function = select(), code out of bounds");
+        }
+
+        selectedObjects[0].style.display = "block";
+
+
+        window.location.href = "#" + allObjects[code].id;
+    }
+
+</script>
 </html>
